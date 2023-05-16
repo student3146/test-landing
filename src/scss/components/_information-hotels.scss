@@ -1,0 +1,208 @@
+.information {
+    margin-right: 120px;
+    margin-bottom: 120px;
+
+    &__container {
+        display: flex;
+        
+    }
+
+    &__descr {
+        margin-left: 49px;
+        margin-top: -12px;
+
+        &--name {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 40px;
+            text-transform: capitalize;
+            color: #1B1C57;
+        }
+
+        &--text {
+            max-width: 420px;
+            font-size: 16px;
+            line-height: 28px;
+            color: #626687;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.section {
+    margin-right: 205px;
+}
+
+.photo {
+    // position: relative;
+
+    &__hotel {
+        position: relative;
+        width: 488px;
+        height: 416px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(image.png);
+        border-radius: 4px;
+    }
+
+    &__sofa {
+        position: absolute;
+        transform: translate(-180%, 155%);
+    }
+
+    &__vaza {
+        position: absolute;
+        transform: translate(-235%, 435%);
+    }
+
+    &__stylo {
+        position: absolute;
+        transform: translate(-125%, 435%);
+    }
+}
+
+.icon {
+    position: relative;
+
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: #1B1C57;
+    }
+
+    &__descr {
+        max-width: 440px;
+        padding-left: 60px;
+        padding-top: 20px;
+        gap: 110px;
+        columns: 2;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 440px;
+            height: 2px;
+            background-color: #F0F3FD;
+        }
+    }
+
+    &__link {
+        position: relative;
+        padding-bottom: 30px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: #3C4563;
+
+        .link-bed {
+            &::before {
+                content: '';
+                position: absolute;
+                left: -55px;
+                top: -7px;
+                width: 32px;
+                height: 32px;
+                background-image: url("../../img/bed\ 1.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .link-bath {
+            &::before {
+                content: '';
+                position: absolute;
+                left: -55px;
+                top: -7px;
+                width: 32px;
+                height: 32px;
+                background-image: url("../../img/bath\ 1.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .link-car {
+            &::before {
+                content: '';
+                position: absolute;
+                left: -55px;
+                top: -7px;
+                width: 32px;
+                height: 32px;
+                background-image: url("../../img/bed\ 1.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .link-flo {
+            &::before {
+                content: '';
+                position: absolute;
+                left: -55px;
+                top: -7px;
+                width: 32px;
+                height: 32px;
+                background-image: url("../../img/bed\ 1.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+
+
+}
+
+.contact {
+    display: flex;
+    gap: 25px;
+    margin-left: 50px;
+    margin-top: 35px;
+
+    &__img {
+        width: 56px;
+        height: 56px;
+    }
+
+    &__title {
+        margin-top: 10px;
+
+        &--name {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: #0E1735;
+        }
+
+        &--pos {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #888B97;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        width: 163px;
+        height: 48px;
+        margin-left: 45px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 5%;
+            color: #fff;
+            background-image: url("../../img/fluent_call-20-filled.png");
+        }
+    }
+}

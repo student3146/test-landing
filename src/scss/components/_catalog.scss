@@ -1,0 +1,166 @@
+.hotels {
+    margin-right: 120px;
+    margin-bottom: 150px;
+
+    &__nav {
+        margin-left: 50px;
+        
+
+        &--text {
+            margin-top: 10px;
+            margin-bottom: 35px;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 40px;
+            color: #1B1C57;
+        }
+
+        &-buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 100px;
+            transform: translateY(-37%);
+            gap: 32px;
+        }
+
+        &-button {
+
+            .btn-catalog {
+                position: relative;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                // padding: 12px 24px;
+                padding-top: 12px;
+                padding-left: 35px;
+                padding-right: 12px;
+                padding-bottom: 12px;
+                border: 1px solid #E0E3EB;
+                border-radius: 32px;
+
+                &:hover {
+                    color: #10B981;
+                    background: #D1FAE5;
+                }
+
+                &--house {
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        left: 10%;
+                        background-image: url("../../img/ph_house-fill.png");
+                    }
+                }
+
+                &--villa {
+                        
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 24px;
+                            height: 24px;
+                            left: 10%;
+                            background-image: url("../../img/ic_round-villa.png");
+                        }
+                }
+
+                &--apart {
+                        
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 24px;
+                            height: 24px;
+                            left: 8%;
+                            background-image: url("../../img/ic_round-apartment.png");
+                        }
+                }
+            }
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.recomendation {
+    position: relative;
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #F59E0B;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 32px;
+        height: 1px;
+        top: 50%;
+        transform: translateX(-120%);
+        background-color: #F59E0B;
+    }
+}
+
+.card {
+    margin-left: 50px;
+
+    &__image {
+        width: 340px;
+        height: 382px;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #0E1735;
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        color: #3C4563;
+    }
+
+}
+
+
+.author {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+
+    &__image {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+
+        &--name {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: #0E1735;
+        }
+
+        &--descr {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #888B97;
+        }
+    }
+}
