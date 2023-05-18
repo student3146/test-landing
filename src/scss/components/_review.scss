@@ -1,0 +1,107 @@
+.review {
+    position: relative;
+    margin-bottom: 250px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        color: #1B1C57;
+        padding-bottom: 40px;
+    }
+
+    &__swiper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__card {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 32px;
+        z-index: 10;
+        top: 80%;
+        background: #FFFFFF;
+        box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
+        border-radius: 16px;
+
+        &--img {
+            max-width: 740px;
+            max-height: 400px;
+        }
+
+        .card__hotel {
+            padding-bottom: 50px;
+
+            &--title {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 25px;
+                text-transform: capitalize;
+                color: #1B1C57;
+            }
+    
+            &--text {
+                font-weight: 400;
+                font-size: 14px;
+                max-width: 548px;
+                line-height: 24px;
+                color: #626687;
+            }
+        }
+    }
+}
+
+.manager {
+    display: flex;
+    justify-content: space-between;
+
+    &__name {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+
+        &--title {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #0E1735;
+        }
+
+        &--text {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #888B97;
+        }
+    }
+}
+
+.review__recom {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 12px;
+  
+    &--link {
+        position: relative;
+        padding-top: 8px;
+        color: #F59E0B;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        width: 32px;
+        height: 1px;
+        top: 0;
+        right: 40%;
+        background: #F59E0B;
+      }
+    }
+  }

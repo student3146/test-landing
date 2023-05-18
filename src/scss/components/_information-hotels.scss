@@ -34,29 +34,40 @@
 }
 
 .photo {
-    // position: relative;
+    position: relative;
 
     &__hotel {
-        position: relative;
         width: 488px;
         height: 416px;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(image.png);
         border-radius: 4px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     &__sofa {
         position: absolute;
         transform: translate(-180%, 155%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     &__vaza {
         position: absolute;
         transform: translate(-235%, 435%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     &__stylo {
         position: absolute;
         transform: translate(-125%, 435%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
