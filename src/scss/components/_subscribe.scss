@@ -1,0 +1,77 @@
+.subscribe {
+    position: relative;
+
+    &__container {
+        margin-left: 120px;
+        margin-right: 120px;
+        margin-bottom: 120px;
+        border-radius: 32px;
+        max-width: 1200px;;
+        height: 312px;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(218,222,247,1) 0%, rgba(0,212,255,1) 100%);
+
+        &--title {
+            position: absolute;
+            right: 32%;
+            padding-top: 40px;
+            max-width: 432px;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 48px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #1B1C57;
+        }
+
+        .registr__form {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            left: 35%;
+            top: 60%;
+
+            &::before {
+                    position: absolute;
+                    content: '';
+                    width: 20px;
+                    height: 12px;
+                    left: 5%;
+                    background-image: url("../../img/ema.png");
+                }
+
+            
+            &--input {
+                width: 496px;
+                height: 54px;
+                padding: 4px 4px 4px 24px;
+                background: #FFFFFF;
+                box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
+                border-radius: 32px;
+
+                &::placeholder {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #888B97;
+                    padding-left: 30px;
+                }
+
+
+            }
+
+            &--btn {     
+                position: absolute;
+                right: 1%;          
+                width: 129px;
+                height: 46px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                color: #fff;
+                background: #10B981;
+                border-radius: 32px;
+            }
+        }
+    }
+}

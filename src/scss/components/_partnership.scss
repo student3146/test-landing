@@ -1,5 +1,6 @@
 .partnership {
     padding-left: 120px;
+    margin-bottom: 120px;
 
     &__title {
         font-weight: 600;
@@ -13,7 +14,7 @@
     &__cards {
         display: flex;
         flex-direction: column;
-        gap: 44px;
+        gap: 40px;
 
         .partnership__card {
             display: flex;
@@ -26,6 +27,67 @@
                 border-radius: 16px;
             }
         }
+    }
+
+    .right__card {
+        &--img {
+            width: 560px;
+            height: 280px;
+            margin-bottom: 24px;
+        }
+
+        .right__info {
+            &--auth {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                padding-bottom: 17px;
+
+                &--img {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                &--name {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #3C4563;
+                }
+            }
+
+            &--title {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                color: #1B1C57;
+                padding-bottom: 12px;
+            }
+
+            &--bottom {
+                position: relative;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: #626687;
+                padding-left: 30px;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    left: 0;
+                    background-image: url("../../img/vect.png");
+                }
+            }
+        }
+    }
+
+    .section__cards {
+        display: flex;
+        gap: 20px;
+        margin-top: 130px;
     }
 
     .card__info {

@@ -1,10 +1,7 @@
 import Swiper from "swiper";
 
-const headerSlider = new Swiper ('.swiper', {
+const headerSlider = new Swiper ('.header__swiper', {
     direction: 'horizontal',
     loop: true,
-
-  // If we need pagination
-
   }
 )

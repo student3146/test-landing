@@ -1,6 +1,6 @@
 import Swiper from "swiper";
 
-const reviewSlider = new Swiper ('.review__swiper', {
+const reviewSlider = new Swiper ('.hotels__cards', {
     direction: 'horizontal',
     loop: true,
 

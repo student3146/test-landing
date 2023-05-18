@@ -12,9 +12,18 @@
 
     &__swiper {
         position: absolute;
-        top: 45%;
-        right: 18%;
+        width: 500px;
+        height: 200px;
+        top: 60%;
+        right: 20%;
     }
+
+    .swiper {
+        position: absolute;
+        width: 600px;
+        height: 100px;
+    }
+
     .slide-one {
         position: absolute;
         top: 90%;
@@ -29,6 +38,7 @@
 
     &__img {
         position: absolute;
+        max-width: 100%;
         top: 0;
         left: 50%;
         background-size: cover;

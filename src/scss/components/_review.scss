@@ -2,6 +2,7 @@
     position: relative;
     margin-bottom: 250px;
 
+
     &__title {
         font-weight: 600;
         font-size: 32px;
@@ -50,6 +51,18 @@
                 max-width: 548px;
                 line-height: 24px;
                 color: #626687;
+            }
+        }
+
+        .marker {
+            position: relative;
+            display: flex;
+
+            >img {
+                position: absolute;
+                width: 23px;
+                height: 23px;
+                left: -80%;
             }
         }
     }
